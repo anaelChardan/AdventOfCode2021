@@ -19,21 +19,21 @@ const example = [
 ];
 
 describe("day5", () => {
-  // it("part1: computes the right result with an example", () => {
-  //   const result = computeProblem(example)
+  it("part1: computes the right result with an example", () => {
+    const result = computeProblem(example)
 
-  //   expect(result).toEqual(5);
-  // });
-  // it("part1: computes the right result with the input", () => {
-  //   const result = computeProblem(day5)
+    expect(result).toEqual(5);
+  });
+  it("part1: computes the right result with the input", () => {
+    const result = computeProblem(day5)
 
-  //   expect(result).toEqual(6841);
-  // });
-  // it("part2: says if a vector is at 45 degrees", () => {
-  //   const result = is45Degrees({ from: { x: 8, y: 0 }, to: { x: 0, y: 8 } })
+    expect(result).toEqual(6841);
+  });
+  it("part2: says if a vector is at 45 degrees", () => {
+    const result = is45Degrees({ from: { x: 8, y: 0 }, to: { x: 0, y: 8 } })
 
-  //   expect(result).toEqual(true);
-  // })
+    expect(result).toEqual(true);
+  })
   it("part2: computes the right coordinates for vector", () => {
     const vectors = [
       {
@@ -153,6 +153,6 @@ describe("day5", () => {
   it("part2: computes the right result with the input", () => {
     const result = computeProblem(day5, true);
 
-    expect(result).toEqual(12);
+    expect(result).toEqual(19258);
   });
 });

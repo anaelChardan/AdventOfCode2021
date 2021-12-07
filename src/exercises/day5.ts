@@ -31,7 +31,6 @@ export function getCoordinateForVector(vector: Vector): Coordinate[]
   const coordinates = [];
   if(is45Degrees(vector)) {
     const direction = getDirection(vector);
-    console.log(direction);
     let stepX = 0;
     let stepY = 0;
     if (direction === 'bottom-right') {
@@ -115,7 +114,7 @@ function print(input: number[][]): void
     result = result.concat("\n");
   }
 
-  console.log(result);
+  // console.log(result);
 }
 
 export function computeProblem(input: Input, include45Diagonal: boolean = false): number
